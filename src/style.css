@@ -1,3 +1,23 @@
-.hello {
-  color: red;
+.header {
+  /* background-color: #5C5346; */
+  flex-direction: column;
+} 
+
+.logo {
+  height: 50px;
+  background-image: url('./cutlery.jpg') no-repeat center;
+}
+
+.flex {
+  display: flex;
+}
+
+header ul {
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+header h2 {
+  text-align: center;
 }
