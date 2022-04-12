@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Page</title>
     <link href="//fonts.googleapis.com/css?family=Allison&subset=latin" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/870e4168d3.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="flex">
+    <header class="d-flex">
       <div class="logo">
         <img
           src="https://img.icons8.com/cute-clipart/64/000000/healthy-food.png"
@@ -17,18 +18,18 @@
         <h2>Welcome to Lekan Didier's Place</h2>
       </div>
       <nav>
-        <ul class="flex">
-          <li><a href="#"> DESSERT</a></li>
-          <li><a href="#">VEGGIES</a></li>
-          <li><a href="#">SEAFOOD</a></li>
+        <ul class="d-flex">
+          <li class="active"><a href="#">SEAFOOD</a><span class="seafood"></span></li>
+          <li><a href="#">VEGETARIAN</a><span class="foodCount vegetarian"></span></li>
         </ul>
       </nav>
     </header>
-    <div class="pop-up" id = "modal"> 
+    <div class="meals-section">
+      <div class="meal-list"></div>
     </div>
-    <footer class = 'footer'>
-      <div class = 'top-section'> <h3> Created by Lekan and Sangwa under CC Licence </h3> </div>
-      <div class = 'bottom-section'> </div>
+    <div id="modal" class="d-flex justify-center"></div>
+    <footer class = 'footer d-flex justify-center align-center'>
+      <h3> Created by Lekan and Sangwa under CC Licence </h3>
     </footer>
   </body>
 </html>
