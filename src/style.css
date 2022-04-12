@@ -32,8 +32,36 @@ header {
   justify-content: center;
 }
 
-.flex {
+.d-flex {
   display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.text-center {
+  text-align: center;
 }
 
 header ul {
@@ -64,5 +92,91 @@ header h2 {
 .footer .top-section {
   padding: 10px 20px;
   height: 50px;
+}
+
+.meals-section {
+  padding: 0 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.meal {
+  width: 90%;
+}
+
+.meal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.meal-body {
+  height: 60px;
+}
+
+.meal-list li {
+  list-style: none;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.fav-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.fa-heart {
+  color: #aaa7a7;
+}
+
+.fa-heart.active {
+  color: rgb(128, 0, 0);
+}
+
+.fa-heart:active {
+  transform: translateY(4px);
+  transition: all ease 0.3s;
+}
+
+.comments {
+  padding: 0.7rem;
+  background-color: #6d8347;
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  border: #6d8347 1px solid;
+}
+
+#comment {
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #6d8347;
+  padding: 0.5rem 1rem;
+}
+
+.comments:hover {
+  background-color: #eaeaea;
+  color: #6d8347;
+  transition: all ease 0.3s;
+}
+
+#comments-ul {
+  padding: 0;
+}
+
+#comments-ul li {
+  width: 40%;
+  text-align: start;
+  align-self: center;
+}
+
+#comments-ul li p {
+  margin: 0.2rem;
 }
 
