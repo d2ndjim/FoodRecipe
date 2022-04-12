@@ -75,6 +75,11 @@ header a {
   color: white;
 }
 
+header a:hover {
+  color: red;
+  cursor: pointer;
+}
+
 header h2 {
   text-align: center;
 }
