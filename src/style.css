@@ -64,6 +64,10 @@ header {
   text-align: center;
 }
 
+ul {
+  list-style: none;
+}
+
 header ul {
   list-style: none;
   justify-content: center;
@@ -201,10 +205,6 @@ img {
   height: 500px;
 }
 
-ul {
-  list-style: none;
-}
-
 .recipe-instrruction {
   word-break: break-word;
   overflow: hidden;
@@ -262,4 +262,3 @@ textarea:focus {
 .hidden {
   display: none !important;
 }
-

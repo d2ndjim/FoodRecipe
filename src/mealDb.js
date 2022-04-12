@@ -1,10 +1,10 @@
 const fetchMeal = async () => {
-  const meallist = document.querySelector(".meal-list");
+  const meallist = document.querySelector('.meal-list');
   const getCategoryUrl = async (category) => {
-    meallist.innerHTML = "";
+    meallist.innerHTML = '';
     const printMeals = (meals) => {
       meals.forEach((element) => {
-        const newmeal = document.createElement("li");
+        const newmeal = document.createElement('li');
         newmeal.innerHTML = ` 
         <div class="meal">
         <div class="meal-header">
@@ -29,26 +29,25 @@ const fetchMeal = async () => {
       .then((res) => res.json())
       .then((data) => data.meals);
     printMeals(meals);
-    popup();
+    // popup();
   };
 
-  const navlinks = document.querySelectorAll("nav li");
+  const navlinks = document.querySelectorAll('nav li');
   const resetLinks = () => {
     for (let i = 0; i < navlinks.length; i += 1) {
-      navlinks[i].classList.remove("active");
+      navlinks[i].classList.remove('active');
     }
   };
 
   for (let i = 0; i < navlinks.length; i += 1) {
-    navlinks[i].addEventListener("click", () => {
+    navlinks[i].addEventListener('click', () => {
       const category = navlinks[i].textContent.toLowerCase();
       getCategoryUrl(category);
       resetLinks();
-      navlinks[i].classList.add("active");
+      navlinks[i].classList.add('active');
     });
   }
-  getCategoryUrl("seafood");
+  getCategoryUrl('seafood');
 };
 
 fetchMeal();
-
