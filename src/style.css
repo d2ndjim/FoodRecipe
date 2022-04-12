@@ -134,6 +134,10 @@ img {
   transition: all ease 0.3s;
 }
 
+.active {
+  border-bottom: 1px solid #6d8347;
+}
+
 .comments {
   padding: 0.7rem;
   background-color: #6d8347;
