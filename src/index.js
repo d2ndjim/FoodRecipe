@@ -1,2 +1,2 @@
 import './style.css';
-import './mealDb.js'
+import './mealDb.js';
