@@ -1,4 +1,56 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Ubuntu+Mono:ital@1&family=Work+Sans:wght@400;500;800&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  font-family: 'Mono', sans-serif;
+}
+
+header {
+  background-color: grey;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.heading {
+  font-family: "Allison", sans-serif;
+  color: chartreuse;
+  font-weight: bolder;
+}
+
+.logo {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+header ul {
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header h2 {
+  text-align: center;
+}
+
 .footer {
   background-color: rgb(255, 236, 210);
 }
