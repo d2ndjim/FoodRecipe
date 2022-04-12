@@ -112,7 +112,6 @@ const getmeals = async () => {
       meals.forEach((element) => {
         const newmeal = document.createElement("li");
         newmeal.innerHTML = ` 
-
         <div class="meal">
         <div class="meal-header">
           <img src="${element.strMealThumb}" loading="lazy" width="500" height="280" alt="${element.strMeal}">
@@ -136,7 +135,7 @@ const getmeals = async () => {
       .then((res) => res.json())
       .then((data) => data.meals);
     printMeals(meals);
-    // popup();
+    popup();
   };
 
   const foodCount = document.getElementsByClassName("foodCount");
@@ -168,8 +167,8 @@ const getmeals = async () => {
       getCategoryUrl(category);
       printCount(category);
       resetLinks();
-      setTimeout(() => like(), 2000);
-      Displaylikes();
+      // setTimeout(() => like(), 2000);
+      // Displaylikes();
       links[i].classList.add("active");
     });
   }
