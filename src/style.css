@@ -1,27 +1,27 @@
 * {
-  margin: 0;
-  padding: 0;
-}
-
-.hello {
-  color: red;
-}
-
-.footer {
-  background-color: rgb(255, 236, 210);
-}
-
-.footer h3 {
-  color: rgb(1, 43, 79);
-  font-size: 30px;
-}
-
-.footer .top-section {
-  padding: 10px 20px;
-  height: 50px;
-}
-
-.footer .bottom-section {
-  background-color: rgb(36, 122, 85);
-  height: 30px;
-}
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hello {
+    color: red;
+  }
+  
+  .footer {
+    background-color: rgb(255, 236, 210);
+  }
+  
+  .footer h3 {
+    color: rgb(1, 43, 79);
+    font-size: 30px;
+  }
+  
+  .footer .top-section {
+    padding: 10px 20px;
+    height: 50px;
+  }
+  
+  .footer .bottom-section {
+    background-color: rgb(36, 122, 85);
+    height: 30px;
+  }
