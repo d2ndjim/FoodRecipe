@@ -52,7 +52,8 @@ header h2 {
 }
 
 .footer {
-  background-color: rgb(255, 236, 210);
+  position: fixed;
+  bottom: 0;
 }
 
 .footer h3 {
