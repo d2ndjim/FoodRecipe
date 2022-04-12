@@ -1,8 +1,7 @@
-export const initializePopUp = () => {
-    const popUp = document.querySelector('#modal');
-     popUp.innerHTML = `
+const initializePopUp = () => {
+  const popUp = document.querySelector('#modal');
+  popUp.innerHTML = `
      <div class = 'container'> 
-     
      <button class = 'close-button'> + </button>
      <img src = "https://static3.depositphotos.com/1002372/164/i/950/depositphotos_1642517-stock-photo-big-food-still-life.jpg" alt = "" >
      <h1> Lolem Ipsum </h1>
@@ -40,4 +39,6 @@ export const initializePopUp = () => {
      </div>
      </div>
     `;
-} 
+};
+
+export default initializePopUp;
