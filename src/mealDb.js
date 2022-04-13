@@ -154,6 +154,4 @@ const fetchMeal = async () => {
   getCategoryUrl('seafood');
 };
 
-
-
 fetchMeal();
