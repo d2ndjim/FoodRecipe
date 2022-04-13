@@ -135,11 +135,7 @@ img {
 }
 
 .heart-active {
-  color: #01616d;
-}
-
-.fa-heart.active {
-  color: rgb(128, 0, 0);
+  color: red;
 }
 
 .fa-heart:active {
