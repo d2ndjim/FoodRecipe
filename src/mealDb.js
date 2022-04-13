@@ -1,4 +1,4 @@
-import sendComment from "./comments.js";
+import sendComment from './comments.js';
 
 const popup = async () => {
   const header = document.querySelector('header');
