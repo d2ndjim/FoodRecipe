@@ -85,7 +85,7 @@ const popup = async () => {
           modal.classList.add('hidden');
         });
       }
-      // postComment();
+      sendComment();
     });
   };
 
