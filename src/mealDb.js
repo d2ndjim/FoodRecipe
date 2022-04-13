@@ -138,6 +138,21 @@ const fetchMeal = async () => {
     popup();
   };
 
+  const foodCount = document.getElementsByClassName('foodCount');
+  const printCount = async (category) => {
+    const mealapiurl = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`;
+    const meals = await fetch(mealapiurl)
+      .then((res) => res.json())
+      .then((data) => data.meals);
+
+    for (let i = 0; i < foodCount.length; i += 1) {
+      foodCount[i].innerHTML = '';
+      if (foodCount[i].classList.contains(category)) {
+        foodCount[i].innerHTML = `(${meals.length})`;
+      }
+    }
+  };
+
   const navlinks = document.querySelectorAll('nav li');
   const resetLinks = () => {
     for (let i = 0; i < navlinks.length; i += 1) {
@@ -149,11 +164,13 @@ const fetchMeal = async () => {
     navlinks[i].addEventListener('click', () => {
       const category = navlinks[i].textContent.toLowerCase();
       getCategoryUrl(category);
+      printCount(category);
       resetLinks();
       navlinks[i].classList.add('active');
     });
   }
   getCategoryUrl('seafood');
+  printCount('seafood');
 };
 
 fetchMeal();

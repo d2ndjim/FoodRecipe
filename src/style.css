@@ -134,13 +134,13 @@ img {
   color: #aaa7a7;
 }
 
-/* .fa-heart.active {
-  color: rgb(128, 0, 0);
-} */
-
 .fa-heart:active {
   transform: translateY(4px);
   transition: all ease 0.3s;
+  color: red;
+}
+
+.heart-active {
   color: red;
 }
 
