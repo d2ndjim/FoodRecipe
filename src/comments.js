@@ -1,28 +1,34 @@
+// Get comments from API
 const displayComments = async () => {
-  const count = document.querySelector('#comments-count');
-  const sendBtn = document.querySelector('#submit-comment');
-  const commentList = document.querySelector('#comments-ul');
-  const id = sendBtn.getAttribute('data');
+  const sendBtn = document.querySelector("#submit-comment");
+  const commentList = document.querySelector("#comments-ul");
+  const id = sendBtn.getAttribute("data");
+  const Count = document.querySelector("#comments-count");
 
   const get = () =>
     fetch(
       `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/aJ1d0zBZhgzyK7ium8fa/comments?item_id=${id}`
     ).then((res) => res.json());
 
-  const foodComments = await get()
-  count.innerHTML =  `${foodComments.length > 0 ? `${foodComments.length}` : '0'}`;
-  commentList.innerHTML = '';
+  const foodComments = await get();
+
+  Count.innerHTML = `${
+    foodComments.length > 0 ? `${foodComments.length}` : "0"
+  }`;
+
+  commentList.innerHTML = "";
   if (foodComments.length > 0) {
-    foodComments.forEach((comment) => {
+    foodComments.forEach((com) => {
       const liComments = document.createElement("li");
       liComments.innerHTML = `
-      <p><span class="bold">${comment.creation_date} ${comment.username}</span>: ${comment.comment}</p>
+      <p><span class="bold">${com.creation_date} ${com.username}</span>: ${com.comment}</p>
       `;
       commentList.appendChild(liComments);
     });
   }
-}
+};
 
+// Post comments from API
 const sendComment = () => {
   const userNameInput = document.querySelector("#input-name");
   const alert = document.querySelector("#alert");
@@ -56,11 +62,9 @@ const sendComment = () => {
     if (name !== "" && comment !== "") {
       userNameInput.value = "";
       userComment.value = "";
-      await post(id, name, comment).then(() => getComments());
-    } else alert.innerHTML = "Enter Name and valid comment";
+      await post(id, name, comment).then(() => displayComments());
+    } else alert.innerHTML = "Enter Name and Comment";
   });
 };
 
-export default sendComment();
-
-
+export default sendComment;
