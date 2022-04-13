@@ -44,6 +44,6 @@ const like = () => {
   });
 };
 
-setTimeout(() => like(), 3000);
+setTimeout(() => like(), 1000);
 
 export { like, Displaylikes };
