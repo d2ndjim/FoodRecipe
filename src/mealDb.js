@@ -1,4 +1,5 @@
 import sendComment from './comments.js';
+import { Displaylikes, like } from "./likeSection.js";
 
 const popup = async () => {
   const header = document.querySelector('header');
@@ -166,6 +167,8 @@ const fetchMeal = async () => {
       getCategoryUrl(category);
       printCount(category);
       resetLinks();
+      setTimeout(() => like(), 2000);
+      Displaylikes();
       navlinks[i].classList.add('active');
     });
   }
@@ -174,3 +177,4 @@ const fetchMeal = async () => {
 };
 
 fetchMeal();
+Displaylikes();

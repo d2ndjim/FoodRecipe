@@ -1,6 +1,4 @@
 import './style.css';
 import './mealDb.js';
-import { Displaylikes, like } from './likeSection.js';
+import './likeSection.js'
 
-Displaylikes();
-like();
