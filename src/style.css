@@ -134,6 +134,10 @@ img {
   color: #aaa7a7;
 }
 
+.heart-active {
+  color: red;
+}
+
 .fa-heart:active {
   transform: translateY(4px);
   transition: all ease 0.3s;
