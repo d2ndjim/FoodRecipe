@@ -1,5 +1,5 @@
 import sendComment from './comments.js';
-import { Displaylikes, like } from "./likeSection.js";
+import { Displaylikes, like } from './likeSection.js';
 
 const popup = async () => {
   const header = document.querySelector('header');
