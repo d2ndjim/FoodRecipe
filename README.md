@@ -109,5 +109,5 @@ All source code files are licensed under the permissive zlib license
 👤 **Sangwa Didier**
 
 - GitHub: [Sanga](https://github.com/sangwa7)
-- Twitter: [d2ndjim_](https://twitter.com/d2ndjim_)
-- LinkedIn: [Lekan](https://linkedin.com/in/lekanj)
+-Twitter: [@sangwa_7](https://twitter.com/sangwa_7)
+-LinkedIn: [Didier Sangwa](https://www.linkedin.com/in/didier-sangwa-463054227)
