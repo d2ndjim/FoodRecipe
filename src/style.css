@@ -95,6 +95,7 @@ header h2 {
 
 .meals-section {
   padding: 0 2rem;
+  margin-left: 10px;
 }
 
 img {
@@ -116,10 +117,7 @@ img {
 }
 
 .meal-list li {
-  list-style: none;
-  width: 30%;
-  display: flex;
-  justify-content: center;
+  width: 100%;
   margin-bottom: 3rem;
 }
 
@@ -185,9 +183,8 @@ img {
 }
 
 .modal {
-  width: 85vw;
+  width: 90%;
   min-height: 100vh;
-  border: #6d8347 2px solid;
   padding: 1rem;
 }
 
@@ -202,8 +199,8 @@ img {
 }
 
 .modal-header-img img {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 300px;
 }
 
 .recipe-instrruction {
@@ -262,4 +259,26 @@ textarea:focus {
 
 .hidden {
   display: none !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .meal-list li {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .modal {
+    width: 85vw;
+    min-height: 100vh;
+    border: #6d8347 2px solid;
+    padding: 1rem;
+  }
+
+  .modal-header-img img {
+    width: 500px;
+    height: 500px;
+  }
 }
